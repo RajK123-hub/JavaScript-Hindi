@@ -69,4 +69,5 @@ const myFunction=function(){
     console.log("Hello World")
 }
 myFunction()
+console.log(typeof myFunction)
 
