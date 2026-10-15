@@ -30,8 +30,8 @@ const gameName=new String("Raj Kiran Singh")
 // let newname=gameName.substring(0,4);
 // console.log(newname)
 
-let anotherName=gameName.slice(-8,4)  // If we want to print from back we can use slice function  reason for no output is below:--
-console.log(anotherName)
+// let anotherName=gameName.slice(-8,4)  // If we want to print from back we can use slice function  reason for no output is below:--
+// console.log(anotherName)
  
 /*Why is the output an empty string?
 The slice(start, end) method extracts characters from the start index up to, but not including, the end index.
@@ -57,9 +57,16 @@ Interview tip: Negative indices count from the end, and the end index is exclude
 
 
 // Trim method remove the extra spaces from the string like--
-let first="    Hello My name is Raj Kiran Singh"
-console.log(first)
-// this removed the extra space
-let second=first;
-console.log(first.trim())
+// let first="    Hello My name is Raj Kiran Singh"
+// console.log(first)
+// // this removed the extra space
+// let second=first;
+// console.log(first.trim())
 
+const url="https://hitesh.com/hitesh%20choudhary"
+
+console.log(url.replace("%20","-"))
+
+console.log(url.includes("hitesh"))  // to check weather present in url or not
+
+console.log(gameName.split("-"));
