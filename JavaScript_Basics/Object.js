@@ -65,16 +65,16 @@ const JsUser={
 // console.log(tinderUser)
 
 
-const regularUser={
-    email:"some@123",
-    fullName:{
-        firstname:"Raj Kiran",
-        lastName:"Singh"
-    }
-}
-console.log(Object.keys(regularUser))   // It gives only Key of object(email,fullName)
-console.log(Object.keys(regularUser.fullName))
-console.log(Object.values(regularUser)) // It gives only values of the Object
+// const regularUser={
+//     email:"some@123",
+//     fullName:{
+//         firstname:"Raj Kiran",
+//         lastName:"Singh"
+//     }
+// }
+// console.log(Object.keys(regularUser))   // It gives only Key of object(email,fullName)
+// console.log(Object.keys(regularUser.fullName))
+// console.log(Object.values(regularUser)) // It gives only values of the Object
 // console.log(regularUser)
 // console.log(regularUser.fullName)
 // console.log(regularUser.fullName.firstname)
@@ -82,36 +82,54 @@ console.log(Object.values(regularUser)) // It gives only values of the Object
 
 // Merge two object
 
-const Obj1={
-    name:"Ankit",
-    age:21,
-    location:"Siwan",
-}
+// const Obj1={
+//     name:"Ankit",
+//     age:21,
+//     location:"Siwan",
+// }
 
-const Obj2={
-    location2:"Mohali",
-    university:"CU",
-}
+// const Obj2={
+//     location2:"Mohali",
+//     university:"CU",
+// }
 
 // const obj3=Object.assign({},Obj1,Obj2)
 // console.log(obj3)
 
 //Another Method to join object using Spread method
-const Obj3={...Obj1,...Obj2}
-console.log(Obj3)
+// const Obj3={...Obj1,...Obj2}
+// console.log(Obj3)
 
 // How to use Object inside Array
 
-const lauda=[
-    {
-        id:1,
-        name:"raj",
-        addredd:"Siwan",
-    },
-    {
-        location:"Mohali",
-    }
-]
-console.log(lauda)
-console.log(lauda[0])
-console.log(lauda[1])
+// const lauda=[
+//     {
+//         id:1,
+//         name:"raj",
+//         addredd:"Siwan",
+//     },
+//     {
+//         location:"Mohali",
+//     }
+// ]
+// console.log(lauda)
+// console.log(lauda[0])
+// console.log(lauda[1])
+
+
+
+
+const course={
+    coursename:"JS in Hindi",
+    price:"999",
+    courseInstructure:"Hitesh",
+}
+// console.log(course.courseInstructure)
+
+// Another way to define and take output
+
+const {courseInstructure:instructure}=course   // here {} is doing destructuring
+console.log(instructure)
+
+const {courseInstructure}=course
+console.log(courseInstructure)
