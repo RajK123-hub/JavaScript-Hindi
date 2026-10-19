@@ -217,5 +217,38 @@
 // console.log(addTwo(3,5))
 
 
-const addtwo = (num1,num2) => ({username:"Raj"})
-console.log(addtwo(3,2))
+// const addtwo = (num1,num2) => ({username:"Raj"})
+// console.log(addtwo(3,2))
+
+
+//++++++++++++ Immediately Invoked Function Expression(IIFE) +++++++++++++++++++++++
+
+//IIFE (Immediately Invoked Function Expression) ka matlab hai aisa function jo define hote hi immediately execute ho jaata hai. Iske liye function ko alag se call karne ki zarurat nahi hoti.
+
+//IIFE ka ek important use global scope ko unnecessary variables se pollute hone se bachana hai.
+// Simple Hinglish mein samjho.
+// 1. Global scope pollution kaise hota hai?
+
+// var userName = "Raj";
+// function chai() {
+//     console.log("Chai is ready");
+// }
+// console.log(userName);
+// Yahan var userName global scope mein declare kiya gaya hai, isliye doosra code bhi ise access kar sakta hai. Bade projects mein aise bahut saare global variables hone se naming conflicts ho sakte hain.
+
+// USe of IIFE
+
+// (function chai() {
+//     console.log(`DB Connected`)
+// })();
+// // ye do ek sath function likhe hai to bina semi-colon ke error dega
+// (function lahasun(){
+//     console.log(`DB Connected Two`)
+// })()
+
+
+// Ye bhi function hai
+
+((name) => {
+    console.log(`Db connected, ${name}`)
+})("Hitesh")
