@@ -111,12 +111,47 @@
 
 //  var c=300
 // let a=200
-if(true){
-    let a=10;
-    const b=200;
-    var c=30;
-    console.log("Inner Scope:",a);
-}
+// if(true){
+//     let a=10;
+//     const b=200;
+//     var c=30;
+//     console.log("Inner Scope:",a);
+// }
 //  console.log(a)
 //  console.log(b)
 //  console.log(c)
+
+
+
+// Hoisting:--JavaScript mein Hoisting ka matlab hai ki JavaScript code execute karne se pehle variables aur functions ki declarations ko process karta hai. Isliye kuch cases mein hum variable ya function ko uski declaration se pehle access kar sakte hain.
+
+// function one(){
+//     const user_name="Raj"
+
+//     function two(){
+//         const website="youTube"
+//         console.log(user_name)
+//     }
+//     // console.log(website)
+//     two()
+// }
+// one()
+
+//+++++++++++++++++++++ Interesting ++++++++++++++++++++++++'
+
+// Function
+
+addOne(5)
+function addOne(num){
+    console.log(num+1)
+    return;
+}
+
+
+// another way to make function
+
+var addTwo=function(num){
+    console.log(num+2)
+    return
+}
+addTwo(5);
