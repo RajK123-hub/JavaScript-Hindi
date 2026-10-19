@@ -141,17 +141,63 @@
 
 // Function
 
-addOne(5)
-function addOne(num){
-    console.log(num+1)
-    return;
-}
+// addOne(5)
+// function addOne(num){
+//     console.log(num+1)
+//     return;
+// }
 
 
 // another way to make function
 
-var addTwo=function(num){
-    console.log(num+2)
-    return
-}
-addTwo(5);
+// var addTwo=function(num){
+//     console.log(num+2)
+//     return
+// }
+// addTwo(5);
+
+
+//+++++++++++++++++++++++++++++++ Arraw Function +++++++++++++++++++++++++++++
+
+
+// Agar ham object ke andar function likte hai to function ka syntex alag hota hai kiyu ki wo function nahi balki wo method ban jata hai.
+//Yaad rakho: Object ke andar method define karo aur bahar user.welcomeMessage() likhkar call karo. Method ko kisi doosre method ke andar bhi call kiya ja sakta hai, lekin uska syntax alag hoga.
+
+// This KeyWord: JavaScript mein this keyword current context ko refer karta hai. Object ke method ke andar, jab tum this use karte ho, toh ye usually us object ko refer karta hai jisne method call kiya hai.
+
+
+// const user={
+//     userName:"Raj Kiran Singh",
+//     location:"Mohali",
+
+//    welcomeMessage:function(){
+//         console.log(`Hii, ${this.userName},You are from ${this.location}`)
+//         console.log(this) //Bro, agar tum console.log(this) ko in lines ke baad likhoge, toh poora current object print hoga. 👇
+//     }
+// }
+// user.welcomeMessage()
+// user.userName=="Ankit"
+// user.welcomeMessage()
+
+
+
+// function lauda(){
+//     let userName="Raj"
+//     console.log(this.userName)  //Ye function ke andar ek local variable hai. Isko access karne ke liye directly userName likho.
+// }
+// lauda()
+
+
+// function lauda(){
+//     let userName="Raj"
+//     console.log(userName)  // yaha userName Local variable hai
+// lauda()
+// }
+
+
+
+//+++++++++++++++++++++++++++++ Arrow Function +++++++++++++++++++++++++++++++++
+
+//JavaScript mein Arrow Function (=>) function likhne ka short aur modern syntax hai. Iska ek important benefit ye bhi hai ki arrow function apna khud ka this nahi banata; ye surrounding scope se this leta hai.
+
+
