@@ -200,4 +200,22 @@
 
 //JavaScript mein Arrow Function (=>) function likhne ka short aur modern syntax hai. Iska ek important benefit ye bhi hai ki arrow function apna khud ka this nahi banata; ye surrounding scope se this leta hai.
 
+// const chai=() => {
+//     let userName="Raj";
+//     console.log(userName)
+// }
+// chai();
 
+// const addTwo=(num1,num2) => {
+//     return num1+num2;
+// }
+// console.log(addTwo(2,4))
+
+// Now explicite arrow function
+// const addTwo=(num1,num2) => num1+num2  // aagr carly braces nahi use hua to  return nahi likhte
+
+// console.log(addTwo(3,5))
+
+
+const addtwo = (num1,num2) => ({username:"Raj"})
+console.log(addtwo(3,2))
