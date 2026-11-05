@@ -115,6 +115,27 @@ const coding=["js","ruby","python","cpp","java"]
 // coding.forEach(printMe)
 
 
-coding.forEach((item,index,arr)=>{
-    console.log(item,index,arr);
+// coding.forEach((item,index,arr)=>{
+//     console.log(item,index,arr);
+// })
+
+
+const myCoding=[       // we are making object inside array
+  {
+    languageName:"JavaScript",
+    languageFileName:"js"
+  },
+  {
+    languageName:"C++",
+    languageFileName:"cpp"
+  },
+  {
+    languageName:"Java",
+    languageFileName:"java"
+  }
+]
+
+myCoding.forEach((item)=>{
+  console.log(item.languageName)
+  console.log(item.languageFileName)
 })
