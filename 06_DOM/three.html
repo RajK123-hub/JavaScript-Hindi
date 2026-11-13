@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Chai Aur Code</title>
+</head>
+<body style="background-color:#212121; color:#fff;">
+    
+</body>
+<script>
+//     const div=document.createElement('div')
+//     console.log(div)
+//     div.className="main"
+//     div.id=Math.round(Math.random()*10+1)
+//     div.setAttribute("title","Generated title")
+//     div.style.backgroundColor="green"
+//     div.style.padding="12px"
+//     div.innerHTML="Chai aur Code "
+//   const addText =  document.createTextNode("Chai aur Code")
+//   div.appendChild(addText)
+
+//   document.body.appendChild(div)
+
+
+                // Create a new h1 element dynamically.
+
+    // const l1=document.createElement('h1')
+    // l1.className="heading";
+    // l1.textContent="Learning JavaScript is Fun"
+    // l1.style.color="yellow"
+    // l1.style.padding="10px"
+
+    // document.body.appendChild(l1)
+
+
+
+                     // Create a div dynamically with these requirements:-
+                    //  Class name: container
+                    // Background color: blue
+                    // Padding: 20px   
+                    //     Create an h2 inside it with text "Welcome to DOM"
+                    //     Create a p inside it with text "I am learning JavaScript"
+                    //     Append both elements inside the div.
+                    //     Finally, append the div to the body.
+
+// const div=document.createElement('div');
+// div.className="container"
+// div.style.backgroundColor="blue"
+// div.style.padding="20px";
+
+// const h2=document.createElement('h2')
+// h2.textContent="Welcome to DOM "
+
+// const p=document.createElement('p')
+// p.textContent="I am learning JavaScript"
+
+// div.appendChild(h2)
+// div.appendChild(p)
+
+// document.body.appendChild(div)
+
+
+                                        // Create this output dynamically:
+                                        // <ul>
+                                        //     <li>HTML</li>
+                                        //     <li>CSS</li>
+                                        //     <li>JavaScript</li>
+                                        // </ul>
+
+    // const language=['HTML','CSS','JavaScript'];
+    // const ul=document.createElement('ul')
+    // for(let i=0;i<language.length;i++){
+    //     const li=document.createElement('li');
+    //     li.textContent=language[i];
+    //     ul.appendChild(li)
+    // }
+    // document.body.appendChild(ul)
+
+
+
+
+const arr=['Raj Kiran','Ankit','Satyam','Ashish','Arjun']
+
+const ul=document.createElement('ul')
+
+for(let i=0;i<arr.length;i++){
+    const li=document.createElement('li')
+    li.textContent=arr[i];
+    ul.appendChild(li);
+}
+document.body.appendChild(ul)
+
+
+const div=document.createElement('div');
+div.className='main'
+div.style.backgroundColor="yellow"
+div.style.padding='.5px';
+document.body.appendChild(div)
+
+
+const proLanguage=['Java','C++','Python','C#','Ruby']
+
+const ol=document.createElement('ol')
+ol.style.backgroundColor='lightgray'
+
+for(let i=0;i<proLanguage.length;i++){
+    const li=document.createElement('li')
+    li.textContent=proLanguage[i];
+    li.style.color='green'
+    ol.appendChild(li)
+}
+document.body.appendChild(ol)
+
+</script>
+</html>
