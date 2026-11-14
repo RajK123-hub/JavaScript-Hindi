@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM  Chai aur Code</title>
+</head>
+<body style="background-color:#212121; color:#fff;">
+    <ul class="language">
+        <li>JavaScript</li>
+        <li>C++</li>
+        <li>Java</li>
+        <li>Python</li>
+    </ul>
+
+    <script>
+
+        // WY TO ADD MORE CHILD
+
+
+        function addLanguage(langName){
+           const li= document.createElement("li")
+           li.innerHTML=`${langName}`
+           document.querySelector('.language').appendChild(li)
+        }
+        addLanguage('TypeScript')
+        addLanguage('HTML')
+
+
+
+        // 2nd Way to add More child
+
+        // addLanguage=["CSS","Ruby","c#"];
+
+        // const ul=document.querySelector('.language');
+
+        // for(let i=0;i<addLanguage.length;i++){
+        //     const li=document.createElement('li')
+        //     li.textContent=addLanguage[i];
+        //     ul.appendChild(li)
+        // }
+        // document.body.appendChild(ul)
+
+
+
+        // 3rd way(optimizes Code)
+
+        function addOptiLanguage(langName){
+            const li=document.createElement('li')
+            li.appendChild(document.createTextNode(langName))
+            document.querySelector('.language').appendChild(li)
+        }
+        addOptiLanguage('golang')
+
+
+        // Way to Edit Element
+
+
+        // const secChild=document.querySelector('li:nth-child(2)')
+        // secChild.innerHTML='Mojo'
+        // console.log(secChild)
+
+        // 2nd Approach to Edit
+
+        // const secChild=document.querySelector('li:nth-child(2)')
+        // const newLi=document.createElement('li')
+        // newLi.textContent='Mojo'
+        // secChild.replaceWith(newLi)
+
+
+        // 3rd way
+
+        const firstLang=document.querySelector('li:first-child')
+        firstLang.outerHTML='<li>TypeScript</li>'
+
+
+        // Remove element
+
+        const lastElement=document.querySelector('li:last-child')
+        lastElement.remove()
+
+        
+    </script>
+</body>
+</html>
