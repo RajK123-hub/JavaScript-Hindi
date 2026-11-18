@@ -1,0 +1,39 @@
+body{
+    background-color:#212121;
+    text-align:center;
+    color:#fff;
+
+}
+#guess{
+    font-size:30px;
+}
+button:hover{
+    cursor:pointer;
+}
+
+#subt{
+    border-radius:10px;
+    font-size:15px;
+    height:35px;
+    color:pink;
+    width:120px;
+    background-color:#212121;
+    color:white;
+}
+
+#guessField{
+    width:200px;
+    height:40px;
+    background-color:white;
+}
+
+#wrapper{
+    background-color:gray;
+    width:500px;
+    text-align:center;
+    margin:300px;
+    margin-right:400px;
+    margin-top:200px;
+}
+
+
