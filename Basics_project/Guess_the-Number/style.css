@@ -35,5 +35,9 @@ button:hover{
     margin-right:400px;
     margin-top:200px;
 }
+#guessField.hover{
+    cursor:pointer;
+    border-color:skyblue;
+}
 
 
