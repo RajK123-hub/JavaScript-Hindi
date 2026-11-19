@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events</title>
+</head>
+<body style="background-color:#242424; color:aliceblue;">
+    <h2>Amazing images</h2>
+    <div>
+        <ul id="images" style="display:flex;">
+            <li><img width="200px" height="300px" id="photoshop" src="data:image/jpeg;base64,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" alt="photoshop"></li>
+
+            <li><img width="200px" id="japan" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlq7OkpV7AfYDZB8m5E_2WbVCgM2t5o-Jn9e_CT8yw5w&s=10" alt=""></li>
+
+            <li><img width="200px" id="river" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3fRcb0innRHhrTX9or4DsOKlUsxS9FAM700_38kXgbA&s=10" alt=""></li>
+
+            <li><img width="200px" id="owl" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ73s4EDBPiyHM8zYSlQbHoyS2be5ZldONhUgkwlqvXQ&s=10" alt=""></li>
+
+            <li><img width="200px" height="300px" id="last" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtrZK-se-jkim57cYvdBLNZNA44eOJD10uh0AicwxYKQ&s" alt=""></li>
+
+            <li><a style="color:aliceblue;" href="https://www.google.com/" id="google">Google</a></li>
+        </ul>
+    </div>
+</body>
+    <script>
+        // document.getElementById('owl').onclick=function(){
+        //     alert('owl clicked')
+        //}
+
+//attachEvent()
+//jquery-on
+
+//         document.getElementById('images').addEventListener('click',function(e){
+//             console.log("clicked inside the ul")
+//         },false)//false is default parameter which is also 3rd para of eventListener and also is not necessary to write false because it is dafault 
+
+//         //events in js which you have to study by self:-
+// //type,timestamp,defaultPrevent,target,source element,currentTarget,clientX,clientY,screenY,altKey,ctrlKey,keyCode,shiftKey
+
+//         document.getElementById('owl').addEventListener('click',function(e){
+//             alert("Owl clicked")
+//             e.stopPropagation()
+//         },false)
+
+//         document.getElementById('google').addEventListener('click',function(e){
+//             console.log("google clicked")
+//             e.preventDefault();
+//             e.stopPropagation()
+//         },false)
+
+
+            document.querySelector('#images').addEventListener('click',function(){
+                console.log(e.target.parentNode);
+
+                let removeIt=e.target.parentNode
+                removeIt.remove()
+            },false)
+            // removeIt.parentNode.removeChild(removeIt)
+    </script>
+</html>
