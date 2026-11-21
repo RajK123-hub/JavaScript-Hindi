@@ -1,0 +1,18 @@
+nav{
+    background-color:White;
+    display:flex;
+    height:50px;
+}
+body{
+    background-color:#212121;
+}
+h1{
+    color:#fff;
+}
+#start{
+    border-radius:10px;
+}
+
+#stop{
+    border-radius:10px;
+}
